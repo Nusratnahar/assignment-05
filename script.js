@@ -42,9 +42,12 @@ for (let i = 0; i < cards.length; i++) {
 
 
     const li = document.createElement("li");
-    li.innerText =
-      serviceName + " - " + serviceNumber + " " + getCurrentTime() ;
-    li.className = "p-2 bg-gray-100 rounded";
+     li.innerHTML = `
+  <div>
+    <div style="font-weight:bold;">${serviceName}</div>
+    <div>${serviceNumber}</div>
+  </div>
+  <div style="font-size:12px; color:gray;">${getCurrentTime()}</div>`;
     history.prepend(li);
   });
 
