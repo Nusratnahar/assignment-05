@@ -40,15 +40,6 @@ for (let i = 0; i < cards.length; i++) {
     copyCount++;
     copyCountAll.innerText = copyCount + " Copy";
 
-
-    const li = document.createElement("li");
-     li.innerHTML = `
-  <div>
-    <div style="font-weight:bold;">${serviceName}</div>
-    <div>${serviceNumber}</div>
-  </div>
-  <div style="font-size:12px; color:gray;">${getCurrentTime()}</div>`;
-    history.prepend(li);
   });
 
   callBtn.addEventListener("click", function () {
@@ -60,7 +51,7 @@ for (let i = 0; i < cards.length; i++) {
     coinCount -= 20;
     coinCountAll.innerText = coinCount;
 
-    alert("📞 Calling " + serviceName +" " + serviceNumber);
+    alert("📞 Calling " + serviceName + " " + serviceNumber);
 
 
 
@@ -73,8 +64,7 @@ li.style.display = "flex";
 li.style.justifyContent = "space-between";
 li.style.alignItems = "center";
 
-li.innerHTML = `
-  <div>
+li.innerHTML = `<div>
     <div style="font-weight:bold;">${serviceName}</div>
     <div>${serviceNumber}</div>
   </div>
