@@ -60,7 +60,7 @@ for (let i = 0; i < cards.length; i++) {
     coinCount -= 20;
     coinCountAll.innerText = coinCount;
 
-    alert("Calling " + serviceName + " at " + serviceNumber);
+    alert("📞 Calling " + serviceName +" " + serviceNumber);
 
 
 
